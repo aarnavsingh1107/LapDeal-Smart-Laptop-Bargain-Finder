@@ -25,7 +25,7 @@ def add_bg_from_local(image_file):
 
 add_bg_from_local("/Users/aarnavsingh/LaptopBargainer/Notion Page Cover.jpeg")
 
-st.title("💻 Laptop Price Predictor + Resale Estimator")
+st.title("💻 LapDeal – Smart Laptop Bargain Finder")
 st.write("Predict the price of a laptop and estimate its resale value based on usage & condition.")
 
 # ----- Laptop Specs -----
