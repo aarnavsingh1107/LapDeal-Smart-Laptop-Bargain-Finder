@@ -3,7 +3,7 @@ import streamlit as st
 import pickle
 import numpy as np
 from resale import LaptopResaleCalculator   # import your OOP resale class
-
+import requests
 # Load model + categorical mappings
 #https://github.com/aarnavsingh1107/LapDeal-Smart-Laptop-Bargain-Finder/blob/main/cat_mappings.pkl
 url_model = "https://raw.githubusercontent.com/aarnavsingh1107/LapDeal-Smart-Laptop-Bargain-Finder/main/laptop_price_model.pkl"
