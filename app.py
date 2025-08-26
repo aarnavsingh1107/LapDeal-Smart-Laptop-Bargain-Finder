@@ -5,8 +5,9 @@ import numpy as np
 from resale import LaptopResaleCalculator   # import your OOP resale class
 
 # Load model + categorical mappings
+#https://github.com/aarnavsingh1107/LapDeal-Smart-Laptop-Bargain-Finder/blob/main/cat_mappings.pkl
 model = pickle.load(open("laptop_price_model.pkl", "rb"))
-mappings = pickle.load(open("cat_mappings.pkl", "rb"))
+mappings = pickle.load(open("https://github.com/aarnavsingh1107/LapDeal-Smart-Laptop-Bargain-Finder/blob/main/cat_mappings.pkl", "rb"))
 
 import base64
 
