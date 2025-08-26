@@ -1,2 +1,29 @@
-# LapDeal-Smart-Laptop-Bargain-Finder
-LapDeal predicts laptop prices using a trained LightGBM model and estimates resale values with depreciation and condition factors. Built with Streamlit, it provides an interactive UI, model-driven pricing, and resale insights, helping users evaluate fair laptop deals and bargain smarter.
+# LapDeal
+
+LapDeal is a smart laptop bargaining and recommendation tool that helps users find the best laptop deals based on their budget, requirements, and preferences. It uses intelligent scraping and ranking techniques to suggest laptops and provide negotiation insights.
+
+## Features
+
+* Laptop search by budget and specifications
+* Bargaining assistant for better deals
+* Deal comparison and ranking
+* Simple and interactive interface
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+```bash
+streamlit run app.py
+```
+
+## Contributing
+
+Contributions are welcome. Please fork the repo and create a pull request.
+
+
+
