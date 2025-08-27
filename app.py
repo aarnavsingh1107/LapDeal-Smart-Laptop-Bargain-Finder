@@ -6,19 +6,14 @@ from resale import LaptopResaleCalculator   # import your OOP resale class
 import requests
 # Load model + categorical mappings
 #https://github.com/aarnavsingh1107/LapDeal-Smart-Laptop-Bargain-Finder/blob/main/cat_mappings.pkl
-url_model = "https://raw.githubusercontent.com/aarnavsingh1107/LapDeal-Smart-Laptop-Bargain-Finder/main/laptop_price_model.pkl"
-url_mappings = "https://raw.githubusercontent.com/aarnavsingh1107/LapDeal-Smart-Laptop-Bargain-Finder/main/cat_mappings.pkl"
+import pickle
 
-with open("laptop_price_model.pkl", "wb") as f:
-    f.write(requests.get(url_model).content)
+# Load model and mappings directly from repo files
+with open("laptop_price_model.pkl", "rb") as f:
+    model = pickle.load(f)
 
-with open("cat_mappings.pkl", "wb") as f:
-    f.write(requests.get(url_mappings).content)
-
-# Now load from local files
-model = pickle.load(open("laptop_price_model.pkl", "rb"))
-mappings = pickle.load(open("cat_mappings.pkl", "rb"))
-
+with open("cat_mappings.pkl", "rb") as f:
+    mappings = pickle.load(f)
 import base64
 
 def add_bg_from_local(image_file):
@@ -34,7 +29,7 @@ def add_bg_from_local(image_file):
     """
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-add_bg_from_local("/Users/aarnavsingh/LaptopBargainer/Notion Page Cover.jpeg")
+add_bg_from_local("Notion Page Cover.jpeg")
 
 st.title("💻 LapDeal – Smart Laptop Bargain Finder")
 st.write("Predict the price of a laptop and estimate its resale value based on usage & condition.")
