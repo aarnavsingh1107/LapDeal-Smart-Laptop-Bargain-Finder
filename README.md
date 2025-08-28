@@ -1,5 +1,6 @@
 # LapDeal
 Site Link- https://lapdeal-smart-laptop-bargain-finder-khjfsvc9tjlhmefchvka2v.streamlit.app/
+
 LapDeal is a smart laptop bargaining and recommendation tool that helps users find the best laptop deals based on their budget, requirements, and preferences. It uses intelligent scraping and ranking techniques to suggest laptops and provide negotiation insights.
 
 ## Features
